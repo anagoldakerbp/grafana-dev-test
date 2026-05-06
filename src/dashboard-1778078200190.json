@@ -2,94 +2,62 @@
   "apiVersion": "dashboard.grafana.app/v2",
   "kind": "Dashboard",
   "metadata": {
-    "name": "bdoras2p4hloga-mig",
-    "uid": "59df1805-0817-472e-afde-4711e54ad319",
-    "resourceVersion": "1763989047655812",
-    "generation": 2,
-    "creationTimestamp": "2025-11-24T12:36:54Z",
-    "labels": {
-      "grafana.app/deprecatedInternalID": "1650"
-    },
-    "annotations": {
-      "grafana.app/createdBy": "service-account:deca0fjwdz1mob",
-      "grafana.app/folder": "ff53aelv0cb9cd",
-      "grafana.app/message": "Restored from migration on 2025-11-24 13:57:26",
-      "grafana.app/updatedBy": "service-account:deca0fjwdz1mob",
-      "grafana.app/updatedTimestamp": "2025-11-24T12:57:27Z",
-      "grafana.app/folderTitle": "User_Christina-mig",
-      "grafana.app/folderUrl": "/dashboards/f/ff53aelv0cb9cd/user_christinamig"
-    }
+    "name": "bdoras2p4hloga-mig"
   },
   "spec": {
     "annotations": [
       {
         "kind": "AnnotationQuery",
         "spec": {
+          "builtIn": true,
+          "enable": true,
+          "hide": true,
+          "iconColor": "rgba(0, 211, 255, 1)",
+          "name": "Annotations \u0026 Alerts",
           "query": {
-            "kind": "DataQuery",
-            "group": "datasource",
-            "version": "v0",
             "datasource": {
               "name": "grafana"
             },
+            "group": "grafana",
+            "kind": "DataQuery",
             "spec": {
               "limit": 100,
               "matchAny": false,
               "tags": [],
               "type": "dashboard"
-            }
-          },
-          "enable": true,
-          "hide": true,
-          "iconColor": "rgba(0, 211, 255, 1)",
-          "name": "Annotations & Alerts",
-          "builtIn": true,
-          "legacyOptions": {
-            "type": "dashboard"
+            },
+            "version": "v0"
           }
         }
       }
     ],
     "cursorSync": "Tooltip",
+    "description": "",
     "editable": true,
     "elements": {
       "panel-13": {
         "kind": "Panel",
         "spec": {
-          "id": 13,
-          "title": "",
-          "description": "",
-          "links": [],
           "data": {
             "kind": "QueryGroup",
             "spec": {
-              "queries": [
-                {
-                  "kind": "PanelQuery",
-                  "spec": {
-                    "query": {
-                      "kind": "DataQuery",
-                      "group": "cognitedata-datasource",
-                      "version": "v0",
-                      "datasource": {
-                        "name": "bea8u9g24x7ggb"
-                      },
-                      "spec": {}
-                    },
-                    "refId": "A",
-                    "hidden": false
-                  }
-                }
-              ],
-              "transformations": [],
-              "queryOptions": {}
+              "queries": [],
+              "queryOptions": {},
+              "transformations": []
             }
           },
+          "description": "",
+          "id": 13,
+          "links": [],
+          "title": "",
           "vizConfig": {
-            "kind": "VizConfig",
             "group": "text",
-            "version": "11.1.0-71799",
+            "kind": "VizConfig",
             "spec": {
+              "fieldConfig": {
+                "defaults": {},
+                "overrides": []
+              },
               "options": {
                 "code": {
                   "language": "plaintext",
@@ -98,22 +66,15 @@
                 },
                 "content": "### Detailed view of the injector well ${pw}\nShows detailed and customizable key information for each of the injection wells",
                 "mode": "markdown"
-              },
-              "fieldConfig": {
-                "defaults": {},
-                "overrides": []
               }
-            }
+            },
+            "version": "11.1.0-71799"
           }
         }
       },
       "panel-14": {
         "kind": "Panel",
         "spec": {
-          "id": 14,
-          "title": "Downhole and wellhead pressure",
-          "description": "",
-          "links": [],
           "data": {
             "kind": "QueryGroup",
             "spec": {
@@ -121,13 +82,13 @@
                 {
                   "kind": "PanelQuery",
                   "spec": {
+                    "hidden": false,
                     "query": {
-                      "kind": "DataQuery",
-                      "group": "cognitedata-datasource",
-                      "version": "v0",
                       "datasource": {
                         "name": "bea8u9g24x7ggb"
                       },
+                      "group": "cognitedata-datasource",
+                      "kind": "DataQuery",
                       "spec": {
                         "aggregation": "stepInterpolation",
                         "assetQuery": {
@@ -193,22 +154,22 @@
                         },
                         "type": "timeserie",
                         "warning": ""
-                      }
+                      },
+                      "version": "v0"
                     },
-                    "refId": "B",
-                    "hidden": false
+                    "refId": "B"
                   }
                 },
                 {
                   "kind": "PanelQuery",
                   "spec": {
+                    "hidden": false,
                     "query": {
-                      "kind": "DataQuery",
-                      "group": "cognitedata-datasource",
-                      "version": "v0",
                       "datasource": {
                         "name": "bea8u9g24x7ggb"
                       },
+                      "group": "cognitedata-datasource",
+                      "kind": "DataQuery",
                       "spec": {
                         "aggregation": "stepInterpolation",
                         "assetQuery": {
@@ -274,22 +235,22 @@
                         },
                         "type": "timeserie",
                         "warning": ""
-                      }
+                      },
+                      "version": "v0"
                     },
-                    "refId": "A",
-                    "hidden": false
+                    "refId": "A"
                   }
                 },
                 {
                   "kind": "PanelQuery",
                   "spec": {
+                    "hidden": false,
                     "query": {
-                      "kind": "DataQuery",
-                      "group": "cognitedata-datasource",
-                      "version": "v0",
                       "datasource": {
                         "name": "bea8u9g24x7ggb"
                       },
+                      "group": "cognitedata-datasource",
+                      "kind": "DataQuery",
                       "spec": {
                         "aggregation": "stepInterpolation",
                         "assetQuery": {
@@ -355,22 +316,22 @@
                         },
                         "type": "timeserie",
                         "warning": ""
-                      }
+                      },
+                      "version": "v0"
                     },
-                    "refId": "E",
-                    "hidden": false
+                    "refId": "E"
                   }
                 },
                 {
                   "kind": "PanelQuery",
                   "spec": {
+                    "hidden": false,
                     "query": {
-                      "kind": "DataQuery",
-                      "group": "cognitedata-datasource",
-                      "version": "v0",
                       "datasource": {
                         "name": "bea8u9g24x7ggb"
                       },
+                      "group": "cognitedata-datasource",
+                      "kind": "DataQuery",
                       "spec": {
                         "aggregation": "average",
                         "assetQuery": {
@@ -434,22 +395,22 @@
                           "graphQlQuery": "{\n  oEE_MachinesQuery {\n    items {\n      Facility\n      Line\n      GoodQuantity {\n        datapoints (start: $__from, end: $__to, , limit: 100){\n            value\n            timestamp\n        }\n      }\n    }\n  }\n}",
                           "groupBy": "Facility"
                         }
-                      }
+                      },
+                      "version": "v0"
                     },
-                    "refId": "H",
-                    "hidden": false
+                    "refId": "H"
                   }
                 },
                 {
                   "kind": "PanelQuery",
                   "spec": {
+                    "hidden": false,
                     "query": {
-                      "kind": "DataQuery",
-                      "group": "cognitedata-datasource",
-                      "version": "v0",
                       "datasource": {
                         "name": "bea8u9g24x7ggb"
                       },
+                      "group": "cognitedata-datasource",
+                      "kind": "DataQuery",
                       "spec": {
                         "aggregation": "average",
                         "assetQuery": {
@@ -513,22 +474,22 @@
                           "graphQlQuery": "{\n  oEE_MachinesQuery {\n    items {\n      Facility\n      Line\n      GoodQuantity {\n        datapoints (start: $__from, end: $__to, , limit: 100){\n            value\n            timestamp\n        }\n      }\n    }\n  }\n}",
                           "groupBy": "Facility"
                         }
-                      }
+                      },
+                      "version": "v0"
                     },
-                    "refId": "G",
-                    "hidden": false
+                    "refId": "G"
                   }
                 },
                 {
                   "kind": "PanelQuery",
                   "spec": {
+                    "hidden": false,
                     "query": {
-                      "kind": "DataQuery",
-                      "group": "cognitedata-datasource",
-                      "version": "v0",
                       "datasource": {
                         "name": "bea8u9g24x7ggb"
                       },
+                      "group": "cognitedata-datasource",
+                      "kind": "DataQuery",
                       "spec": {
                         "aggregation": "average",
                         "assetQuery": {
@@ -592,57 +553,28 @@
                           "graphQlQuery": "{\n  oEE_MachinesQuery {\n    items {\n      Facility\n      Line\n      GoodQuantity {\n        datapoints (start: $__from, end: $__to, , limit: 100){\n            value\n            timestamp\n        }\n      }\n    }\n  }\n}",
                           "groupBy": "Facility"
                         }
-                      }
+                      },
+                      "version": "v0"
                     },
-                    "refId": "F",
-                    "hidden": false
+                    "refId": "F"
                   }
                 }
               ],
-              "transformations": [],
-              "queryOptions": {}
+              "queryOptions": {},
+              "transformations": []
             }
           },
+          "description": "",
+          "id": 14,
+          "links": [],
+          "title": "Downhole and wellhead pressure",
+          "transparent": true,
           "vizConfig": {
-            "kind": "VizConfig",
             "group": "timeseries",
-            "version": "9.0.5-d1f1041",
+            "kind": "VizConfig",
             "spec": {
-              "options": {
-                "legend": {
-                  "calcs": [
-                    "mean",
-                    "lastNotNull",
-                    "max",
-                    "min"
-                  ],
-                  "displayMode": "table",
-                  "placement": "right",
-                  "showLegend": true,
-                  "width": 470
-                },
-                "tooltip": {
-                  "mode": "multi",
-                  "sort": "none"
-                }
-              },
               "fieldConfig": {
                 "defaults": {
-                  "unit": "short",
-                  "decimals": 1,
-                  "thresholds": {
-                    "mode": "absolute",
-                    "steps": [
-                      {
-                        "value": null,
-                        "color": "green"
-                      },
-                      {
-                        "value": 80,
-                        "color": "red"
-                      }
-                    ]
-                  },
                   "color": {
                     "mode": "palette-classic"
                   },
@@ -677,7 +609,21 @@
                     "thresholdsStyle": {
                       "mode": "off"
                     }
-                  }
+                  },
+                  "decimals": 1,
+                  "thresholds": {
+                    "mode": "absolute",
+                    "steps": [
+                      {
+                        "color": "green"
+                      },
+                      {
+                        "color": "red",
+                        "value": 80
+                      }
+                    ]
+                  },
+                  "unit": "short"
                 },
                 "overrides": [
                   {
@@ -759,19 +705,33 @@
                     ]
                   }
                 ]
+              },
+              "options": {
+                "legend": {
+                  "calcs": [
+                    "mean",
+                    "lastNotNull",
+                    "max",
+                    "min"
+                  ],
+                  "displayMode": "table",
+                  "placement": "right",
+                  "showLegend": true,
+                  "width": 470
+                },
+                "tooltip": {
+                  "mode": "multi",
+                  "sort": "none"
+                }
               }
-            }
-          },
-          "transparent": true
+            },
+            "version": "9.0.5-d1f1041"
+          }
         }
       },
       "panel-15": {
         "kind": "Panel",
         "spec": {
-          "id": 15,
-          "title": "Downhole and wellhead temperature",
-          "description": "",
-          "links": [],
           "data": {
             "kind": "QueryGroup",
             "spec": {
@@ -779,13 +739,13 @@
                 {
                   "kind": "PanelQuery",
                   "spec": {
+                    "hidden": false,
                     "query": {
-                      "kind": "DataQuery",
-                      "group": "cognitedata-datasource",
-                      "version": "v0",
                       "datasource": {
                         "name": "bea8u9g24x7ggb"
                       },
+                      "group": "cognitedata-datasource",
+                      "kind": "DataQuery",
                       "spec": {
                         "aggregation": "average",
                         "assetQuery": {
@@ -813,22 +773,22 @@
                         "target": "EG_13FI1318K.Y",
                         "type": "timeserie",
                         "warning": ""
-                      }
+                      },
+                      "version": "v0"
                     },
-                    "refId": "D",
-                    "hidden": false
+                    "refId": "D"
                   }
                 },
                 {
                   "kind": "PanelQuery",
                   "spec": {
+                    "hidden": false,
                     "query": {
-                      "kind": "DataQuery",
-                      "group": "cognitedata-datasource",
-                      "version": "v0",
                       "datasource": {
                         "name": "bea8u9g24x7ggb"
                       },
+                      "group": "cognitedata-datasource",
+                      "kind": "DataQuery",
                       "spec": {
                         "aggregation": "average",
                         "assetQuery": {
@@ -856,22 +816,22 @@
                         "target": "EG_13FI1318N.Y",
                         "type": "timeserie",
                         "warning": ""
-                      }
+                      },
+                      "version": "v0"
                     },
-                    "refId": "E",
-                    "hidden": false
+                    "refId": "E"
                   }
                 },
                 {
                   "kind": "PanelQuery",
                   "spec": {
+                    "hidden": false,
                     "query": {
-                      "kind": "DataQuery",
-                      "group": "cognitedata-datasource",
-                      "version": "v0",
                       "datasource": {
                         "name": "bea8u9g24x7ggb"
                       },
+                      "group": "cognitedata-datasource",
+                      "kind": "DataQuery",
                       "spec": {
                         "aggregation": "average",
                         "assetQuery": {
@@ -899,22 +859,22 @@
                         "target": "EG_13FI1318K.Y",
                         "type": "timeserie",
                         "warning": ""
-                      }
+                      },
+                      "version": "v0"
                     },
-                    "refId": "A",
-                    "hidden": false
+                    "refId": "A"
                   }
                 },
                 {
                   "kind": "PanelQuery",
                   "spec": {
+                    "hidden": false,
                     "query": {
-                      "kind": "DataQuery",
-                      "group": "cognitedata-datasource",
-                      "version": "v0",
                       "datasource": {
                         "name": "bea8u9g24x7ggb"
                       },
+                      "group": "cognitedata-datasource",
+                      "kind": "DataQuery",
                       "spec": {
                         "aggregation": "average",
                         "assetQuery": {
@@ -942,22 +902,22 @@
                         "target": "EG_13FI1318K.Y",
                         "type": "timeserie",
                         "warning": ""
-                      }
+                      },
+                      "version": "v0"
                     },
-                    "refId": "B",
-                    "hidden": false
+                    "refId": "B"
                   }
                 },
                 {
                   "kind": "PanelQuery",
                   "spec": {
+                    "hidden": false,
                     "query": {
-                      "kind": "DataQuery",
-                      "group": "cognitedata-datasource",
-                      "version": "v0",
                       "datasource": {
                         "name": "bea8u9g24x7ggb"
                       },
+                      "group": "cognitedata-datasource",
+                      "kind": "DataQuery",
                       "spec": {
                         "aggregation": "average",
                         "assetQuery": {
@@ -985,22 +945,22 @@
                         "target": "EG_13FI1318N.Y",
                         "type": "timeserie",
                         "warning": ""
-                      }
+                      },
+                      "version": "v0"
                     },
-                    "refId": "C",
-                    "hidden": false
+                    "refId": "C"
                   }
                 },
                 {
                   "kind": "PanelQuery",
                   "spec": {
+                    "hidden": false,
                     "query": {
-                      "kind": "DataQuery",
-                      "group": "cognitedata-datasource",
-                      "version": "v0",
                       "datasource": {
                         "name": "bea8u9g24x7ggb"
                       },
+                      "group": "cognitedata-datasource",
+                      "kind": "DataQuery",
                       "spec": {
                         "aggregation": "average",
                         "assetQuery": {
@@ -1028,57 +988,28 @@
                         "target": "EG_13FI1318K.Y",
                         "type": "timeserie",
                         "warning": ""
-                      }
+                      },
+                      "version": "v0"
                     },
-                    "refId": "F",
-                    "hidden": false
+                    "refId": "F"
                   }
                 }
               ],
-              "transformations": [],
-              "queryOptions": {}
+              "queryOptions": {},
+              "transformations": []
             }
           },
+          "description": "",
+          "id": 15,
+          "links": [],
+          "title": "Downhole and wellhead temperature",
+          "transparent": true,
           "vizConfig": {
-            "kind": "VizConfig",
             "group": "timeseries",
-            "version": "9.0.5-d1f1041",
+            "kind": "VizConfig",
             "spec": {
-              "options": {
-                "legend": {
-                  "calcs": [
-                    "mean",
-                    "lastNotNull",
-                    "max",
-                    "min"
-                  ],
-                  "displayMode": "table",
-                  "placement": "right",
-                  "showLegend": true,
-                  "width": 460
-                },
-                "tooltip": {
-                  "mode": "multi",
-                  "sort": "none"
-                }
-              },
               "fieldConfig": {
                 "defaults": {
-                  "unit": "short",
-                  "decimals": 1,
-                  "thresholds": {
-                    "mode": "absolute",
-                    "steps": [
-                      {
-                        "value": null,
-                        "color": "green"
-                      },
-                      {
-                        "value": 80,
-                        "color": "red"
-                      }
-                    ]
-                  },
                   "color": {
                     "mode": "palette-classic"
                   },
@@ -1113,7 +1044,21 @@
                     "thresholdsStyle": {
                       "mode": "off"
                     }
-                  }
+                  },
+                  "decimals": 1,
+                  "thresholds": {
+                    "mode": "absolute",
+                    "steps": [
+                      {
+                        "color": "green"
+                      },
+                      {
+                        "color": "red",
+                        "value": 80
+                      }
+                    ]
+                  },
+                  "unit": "short"
                 },
                 "overrides": [
                   {
@@ -1180,19 +1125,33 @@
                     ]
                   }
                 ]
+              },
+              "options": {
+                "legend": {
+                  "calcs": [
+                    "mean",
+                    "lastNotNull",
+                    "max",
+                    "min"
+                  ],
+                  "displayMode": "table",
+                  "placement": "right",
+                  "showLegend": true,
+                  "width": 460
+                },
+                "tooltip": {
+                  "mode": "multi",
+                  "sort": "none"
+                }
               }
-            }
-          },
-          "transparent": true
+            },
+            "version": "9.0.5-d1f1041"
+          }
         }
       },
       "panel-17": {
         "kind": "Panel",
         "spec": {
-          "id": 17,
-          "title": "Injection rate and choke valve",
-          "description": "",
-          "links": [],
           "data": {
             "kind": "QueryGroup",
             "spec": {
@@ -1200,92 +1159,13 @@
                 {
                   "kind": "PanelQuery",
                   "spec": {
+                    "hidden": false,
                     "query": {
-                      "kind": "DataQuery",
-                      "group": "cognitedata-datasource",
-                      "version": "v0",
                       "datasource": {
-                        "name": "bea8u9g24x7ggb"
+                        "name": "efaxrfj7e9ou8a"
                       },
-                      "spec": {
-                        "aggregation": "average",
-                        "assetQuery": {
-                          "includeSubtrees": false,
-                          "target": ""
-                        },
-                        "eventQuery": {
-                          "activeAtTimeRange": true,
-                          "columns": [
-                            "externalId",
-                            "type",
-                            "subtype",
-                            "description",
-                            "startTime",
-                            "endTime"
-                          ],
-                          "expr": ""
-                        },
-                        "expr": "ts{name=\"EG_${pw}18FT1263.Y\"}*24",
-                        "extractionPipelinesQuery": {
-                          "columns": [
-                            "name",
-                            "status",
-                            "lastUpdatedTime",
-                            "lastFailure",
-                            "lastSeen",
-                            "lastSuccess",
-                            "schedule",
-                            "data set",
-                            "message"
-                          ],
-                          "getRuns": false,
-                          "limit": 1000,
-                          "selections": []
-                        },
-                        "flexibleDataModellingQuery": {
-                          "graphQlQuery": "{\n  listMachine {\n    items {\n      __typename\n      MachineWeight\n      Model\n      Anomalies {\n        externalId\n        id\n        name\n        __typename\n      }\n      Availability {\n        id\n        name\n        externalId\n        __typename\n      }\n    }\n  }\n}",
-                          "name": "",
-                          "tsKeys": []
-                        },
-                        "granularity": "",
-                        "label": "Injection rate subsea MPM (m3/d)",
-                        "latestValue": false,
-                        "relationshipsQuery": {
-                          "dataSetIds": [],
-                          "depth": 1,
-                          "isActiveAtTime": false,
-                          "isTypeTimeseries": false,
-                          "labels": {
-                            "containsAny": []
-                          },
-                          "limit": 1000,
-                          "sourceExternalIds": []
-                        },
-                        "tab": "Custom",
-                        "target": "Injection rate (m3/d)",
-                        "targetRefType": "externalId",
-                        "templateQuery": {
-                          "dataPath": "oEE_MachinesQuery.items",
-                          "datapointsPath": "GoodQuantity.datapoints",
-                          "graphQlQuery": "{\n  oEE_MachinesQuery {\n    items {\n      Facility\n      Line\n      GoodQuantity {\n        datapoints (start: $__from, end: $__to, , limit: 100){\n            value\n            timestamp\n        }\n      }\n    }\n  }\n}",
-                          "groupBy": "Facility"
-                        }
-                      }
-                    },
-                    "refId": "B",
-                    "hidden": false
-                  }
-                },
-                {
-                  "kind": "PanelQuery",
-                  "spec": {
-                    "query": {
-                      "kind": "DataQuery",
                       "group": "cognitedata-datasource",
-                      "version": "v0",
-                      "datasource": {
-                        "name": "bea8u9g24x7ggb"
-                      },
+                      "kind": "DataQuery",
                       "spec": {
                         "aggregation": "average",
                         "assetQuery": {
@@ -1305,6 +1185,39 @@
                           "target": "",
                           "withRelationships": false
                         },
+                        "cogniteActivityQuery": {
+                          "enabled": false,
+                          "externalId": "CogniteActivity",
+                          "space": "cdf_cdm",
+                          "useScheduledTime": false,
+                          "version": "v1"
+                        },
+                        "cogniteActivityTabQuery": {
+                          "activeOnly": true,
+                          "assetInstances": [],
+                          "columns": [
+                            "externalId",
+                            "description",
+                            "startTime",
+                            "endTime"
+                          ],
+                          "externalId": "CogniteActivity",
+                          "instanceSpace": "",
+                          "resourceType": "CogniteAsset",
+                          "sort": [
+                            {
+                              "order": "asc",
+                              "property": "startTime"
+                            }
+                          ],
+                          "space": "cdf_cdm",
+                          "version": "v1"
+                        },
+                        "cogniteTimeSeries": {
+                          "externalId": "CogniteTimeSeries",
+                          "space": "cdf_cdm",
+                          "version": "v1"
+                        },
                         "eventQuery": {
                           "activeAtTimeRange": true,
                           "advancedFilter": "",
@@ -1323,7 +1236,7 @@
                           ],
                           "expr": ""
                         },
-                        "expr": "ts{name=\"EG_${pw}.FAS.WaterInjVolStdStg1\"}*24",
+                        "expr": "",
                         "extractionPipelinesQuery": {
                           "columns": [
                             "name",
@@ -1341,12 +1254,12 @@
                           "selections": []
                         },
                         "flexibleDataModellingQuery": {
+                          "externalId": "",
                           "graphQlQuery": "{\n  listMachine {\n    items {\n      __typename\n      MachineWeight\n      Model\n      Anomalies {\n        externalId\n        id\n        name\n        __typename\n      }\n      Availability {\n        id\n        name\n        externalId\n        __typename\n      }\n    }\n  }\n}",
-                          "name": "",
                           "tsKeys": []
                         },
                         "granularity": "",
-                        "label": "Injection rate FAS (m3/d)",
+                        "label": "",
                         "latestValue": false,
                         "relationshipsQuery": {
                           "dataSetIds": [],
@@ -1359,7 +1272,7 @@
                           "limit": 1000,
                           "sourceExternalIds": []
                         },
-                        "tab": "Custom",
+                        "tab": "CogniteTimeSeries",
                         "target": "",
                         "templateQuery": {
                           "dataPath": "oEE_MachinesQuery.items",
@@ -1367,300 +1280,28 @@
                           "graphQlQuery": "{\n  oEE_MachinesQuery {\n    items {\n      Facility\n      Line\n      GoodQuantity {\n        datapoints (start: $__from, end: $__to, , limit: 100){\n            value\n            timestamp\n        }\n      }\n    }\n  }\n}",
                           "groupBy": "Facility"
                         }
-                      }
-                    },
-                    "refId": "D",
-                    "hidden": false
-                  }
-                },
-                {
-                  "kind": "PanelQuery",
-                  "spec": {
-                    "query": {
-                      "kind": "DataQuery",
-                      "group": "cognitedata-datasource",
-                      "version": "v0",
-                      "datasource": {
-                        "name": "bea8u9g24x7ggb"
                       },
-                      "spec": {
-                        "aggregation": "average",
-                        "assetQuery": {
-                          "includeSubtrees": false,
-                          "target": "$qw"
-                        },
-                        "error": "",
-                        "eventQuery": {
-                          "activeAtTimeRange": true,
-                          "columns": [
-                            "externalId",
-                            "type",
-                            "subtype",
-                            "description",
-                            "startTime",
-                            "endTime"
-                          ],
-                          "expr": ""
-                        },
-                        "expr": "ts{name=\"EG_13FT3481.Y\"}*24",
-                        "extractionPipelinesQuery": {
-                          "columns": [
-                            "name",
-                            "status",
-                            "lastUpdatedTime",
-                            "lastFailure",
-                            "lastSeen",
-                            "lastSuccess",
-                            "schedule",
-                            "data set",
-                            "message"
-                          ],
-                          "getRuns": false,
-                          "limit": 1000,
-                          "selections": []
-                        },
-                        "flexibleDataModellingQuery": {
-                          "graphQlQuery": "{\n  listMachine {\n    items {\n      __typename\n      MachineWeight\n      Model\n      Anomalies {\n        externalId\n        id\n        name\n        __typename\n      }\n      Availability {\n        id\n        name\n        externalId\n        __typename\n      }\n    }\n  }\n}",
-                          "name": "",
-                          "tsKeys": []
-                        },
-                        "granularity": "",
-                        "label": "SO injection rate topside (m3/d)",
-                        "latestValue": false,
-                        "relationshipsQuery": {
-                          "dataSetIds": [],
-                          "depth": 1,
-                          "isActiveAtTime": false,
-                          "isTypeTimeseries": false,
-                          "labels": {
-                            "containsAny": []
-                          },
-                          "limit": 1000,
-                          "sourceExternalIds": []
-                        },
-                        "tab": "Custom",
-                        "target": "EG_13PT5122.Y",
-                        "templateQuery": {
-                          "dataPath": "oEE_MachinesQuery.items",
-                          "datapointsPath": "GoodQuantity.datapoints",
-                          "graphQlQuery": "{\n  oEE_MachinesQuery {\n    items {\n      Facility\n      Line\n      GoodQuantity {\n        datapoints (start: $__from, end: $__to, , limit: 100){\n            value\n            timestamp\n        }\n      }\n    }\n  }\n}",
-                          "groupBy": "Facility"
-                        },
-                        "type": "timeserie",
-                        "warning": ""
-                      }
+                      "version": "v0"
                     },
-                    "refId": "A",
-                    "hidden": false
-                  }
-                },
-                {
-                  "kind": "PanelQuery",
-                  "spec": {
-                    "query": {
-                      "kind": "DataQuery",
-                      "group": "cognitedata-datasource",
-                      "version": "v0",
-                      "datasource": {
-                        "name": "bea8u9g24x7ggb"
-                      },
-                      "spec": {
-                        "aggregation": "average",
-                        "assetQuery": {
-                          "includeSubtrees": false,
-                          "target": "$ch"
-                        },
-                        "error": "",
-                        "eventQuery": {
-                          "activeAtTimeRange": true,
-                          "columns": [
-                            "externalId",
-                            "type",
-                            "subtype",
-                            "description",
-                            "startTime",
-                            "endTime"
-                          ],
-                          "expr": ""
-                        },
-                        "expr": "ts{name=\"EG_${pw}18HCV1219.XG(1)\"}",
-                        "extractionPipelinesQuery": {
-                          "columns": [
-                            "name",
-                            "status",
-                            "lastUpdatedTime",
-                            "lastFailure",
-                            "lastSeen",
-                            "lastSuccess",
-                            "schedule",
-                            "data set",
-                            "message"
-                          ],
-                          "getRuns": false,
-                          "limit": 1000,
-                          "selections": []
-                        },
-                        "flexibleDataModellingQuery": {
-                          "graphQlQuery": "{\n  listMachine {\n    items {\n      __typename\n      MachineWeight\n      Model\n      Anomalies {\n        externalId\n        id\n        name\n        __typename\n      }\n      Availability {\n        id\n        name\n        externalId\n        __typename\n      }\n    }\n  }\n}",
-                          "name": "",
-                          "tsKeys": []
-                        },
-                        "granularity": "",
-                        "label": "Choke (%)",
-                        "latestValue": false,
-                        "relationshipsQuery": {
-                          "dataSetIds": [],
-                          "depth": 1,
-                          "isActiveAtTime": false,
-                          "isTypeTimeseries": false,
-                          "labels": {
-                            "containsAny": []
-                          },
-                          "limit": 1000,
-                          "sourceExternalIds": []
-                        },
-                        "tab": "Custom",
-                        "target": "",
-                        "templateQuery": {
-                          "dataPath": "oEE_MachinesQuery.items",
-                          "datapointsPath": "GoodQuantity.datapoints",
-                          "graphQlQuery": "{\n  oEE_MachinesQuery {\n    items {\n      Facility\n      Line\n      GoodQuantity {\n        datapoints (start: $__from, end: $__to, , limit: 100){\n            value\n            timestamp\n        }\n      }\n    }\n  }\n}",
-                          "groupBy": "Facility"
-                        },
-                        "type": "timeserie",
-                        "warning": ""
-                      }
-                    },
-                    "refId": "C",
-                    "hidden": false
-                  }
-                },
-                {
-                  "kind": "PanelQuery",
-                  "spec": {
-                    "query": {
-                      "kind": "DataQuery",
-                      "group": "cognitedata-datasource",
-                      "version": "v0",
-                      "datasource": {
-                        "name": "bea8u9g24x7ggb"
-                      },
-                      "spec": {
-                        "aggregation": "average",
-                        "assetQuery": {
-                          "includeSubtrees": false,
-                          "target": "$ch"
-                        },
-                        "error": "",
-                        "eventQuery": {
-                          "activeAtTimeRange": true,
-                          "columns": [
-                            "externalId",
-                            "type",
-                            "subtype",
-                            "description",
-                            "startTime",
-                            "endTime"
-                          ],
-                          "expr": ""
-                        },
-                        "expr": "ts{name=\"EG_13HCV3482.XG(1)\"}",
-                        "extractionPipelinesQuery": {
-                          "columns": [
-                            "name",
-                            "status",
-                            "lastUpdatedTime",
-                            "lastFailure",
-                            "lastSeen",
-                            "lastSuccess",
-                            "schedule",
-                            "data set",
-                            "message"
-                          ],
-                          "getRuns": false,
-                          "limit": 1000,
-                          "selections": []
-                        },
-                        "flexibleDataModellingQuery": {
-                          "graphQlQuery": "{\n  listMachine {\n    items {\n      __typename\n      MachineWeight\n      Model\n      Anomalies {\n        externalId\n        id\n        name\n        __typename\n      }\n      Availability {\n        id\n        name\n        externalId\n        __typename\n      }\n    }\n  }\n}",
-                          "name": "",
-                          "tsKeys": []
-                        },
-                        "granularity": "",
-                        "label": "SO choke topside (%)",
-                        "latestValue": false,
-                        "relationshipsQuery": {
-                          "dataSetIds": [],
-                          "depth": 1,
-                          "isActiveAtTime": false,
-                          "isTypeTimeseries": false,
-                          "labels": {
-                            "containsAny": []
-                          },
-                          "limit": 1000,
-                          "sourceExternalIds": []
-                        },
-                        "tab": "Custom",
-                        "target": "",
-                        "templateQuery": {
-                          "dataPath": "oEE_MachinesQuery.items",
-                          "datapointsPath": "GoodQuantity.datapoints",
-                          "graphQlQuery": "{\n  oEE_MachinesQuery {\n    items {\n      Facility\n      Line\n      GoodQuantity {\n        datapoints (start: $__from, end: $__to, , limit: 100){\n            value\n            timestamp\n        }\n      }\n    }\n  }\n}",
-                          "groupBy": "Facility"
-                        },
-                        "type": "timeserie",
-                        "warning": ""
-                      }
-                    },
-                    "refId": "F",
-                    "hidden": false
+                    "refId": "A"
                   }
                 }
               ],
-              "transformations": [],
-              "queryOptions": {}
+              "queryOptions": {},
+              "transformations": []
             }
           },
+          "description": "",
+          "id": 17,
+          "links": [],
+          "title": "Injection rate and choke valve",
+          "transparent": true,
           "vizConfig": {
-            "kind": "VizConfig",
             "group": "timeseries",
-            "version": "9.0.5-d1f1041",
+            "kind": "VizConfig",
             "spec": {
-              "options": {
-                "legend": {
-                  "calcs": [
-                    "mean",
-                    "lastNotNull",
-                    "max",
-                    "min"
-                  ],
-                  "displayMode": "table",
-                  "placement": "right",
-                  "showLegend": true,
-                  "width": 470
-                },
-                "tooltip": {
-                  "mode": "multi",
-                  "sort": "none"
-                }
-              },
               "fieldConfig": {
                 "defaults": {
-                  "unit": "none",
-                  "decimals": 0,
-                  "thresholds": {
-                    "mode": "absolute",
-                    "steps": [
-                      {
-                        "value": null,
-                        "color": "green"
-                      },
-                      {
-                        "value": 80,
-                        "color": "red"
-                      }
-                    ]
-                  },
                   "color": {
                     "mode": "palette-classic"
                   },
@@ -1671,6 +1312,7 @@
                     "axisLabel": "Injection rate (m3/d)",
                     "axisPlacement": "auto",
                     "barAlignment": 0,
+                    "barWidthFactor": 0.6,
                     "drawStyle": "line",
                     "fillOpacity": 0,
                     "gradientMode": "none",
@@ -1687,6 +1329,7 @@
                       "type": "linear"
                     },
                     "showPoints": "never",
+                    "showValues": false,
                     "spanNulls": false,
                     "stacking": {
                       "group": "A",
@@ -1695,7 +1338,22 @@
                     "thresholdsStyle": {
                       "mode": "off"
                     }
-                  }
+                  },
+                  "decimals": 0,
+                  "thresholds": {
+                    "mode": "absolute",
+                    "steps": [
+                      {
+                        "color": "green",
+                        "value": 0
+                      },
+                      {
+                        "color": "red",
+                        "value": 80
+                      }
+                    ]
+                  },
+                  "unit": "none"
                 },
                 "overrides": [
                   {
@@ -1825,19 +1483,38 @@
                     ]
                   }
                 ]
+              },
+              "options": {
+                "annotations": {
+                  "clustering": -1,
+                  "multiLane": false
+                },
+                "legend": {
+                  "calcs": [
+                    "mean",
+                    "lastNotNull",
+                    "max",
+                    "min"
+                  ],
+                  "displayMode": "table",
+                  "placement": "right",
+                  "showLegend": true,
+                  "width": 470
+                },
+                "tooltip": {
+                  "hideZeros": false,
+                  "mode": "multi",
+                  "sort": "none"
+                }
               }
-            }
-          },
-          "transparent": true
+            },
+            "version": "13.1.0-25241150568"
+          }
         }
       },
       "panel-20": {
         "kind": "Panel",
         "spec": {
-          "id": 20,
-          "title": "Injectivity",
-          "description": "",
-          "links": [],
           "data": {
             "kind": "QueryGroup",
             "spec": {
@@ -1845,13 +1522,13 @@
                 {
                   "kind": "PanelQuery",
                   "spec": {
+                    "hidden": false,
                     "query": {
-                      "kind": "DataQuery",
-                      "group": "cognitedata-datasource",
-                      "version": "v0",
                       "datasource": {
                         "name": "bea8u9g24x7ggb"
                       },
+                      "group": "cognitedata-datasource",
+                      "kind": "DataQuery",
                       "spec": {
                         "aggregation": "average",
                         "assetQuery": {
@@ -1917,22 +1594,22 @@
                         },
                         "type": "timeserie",
                         "warning": ""
-                      }
+                      },
+                      "version": "v0"
                     },
-                    "refId": "C",
-                    "hidden": false
+                    "refId": "C"
                   }
                 },
                 {
                   "kind": "PanelQuery",
                   "spec": {
+                    "hidden": false,
                     "query": {
-                      "kind": "DataQuery",
-                      "group": "cognitedata-datasource",
-                      "version": "v0",
                       "datasource": {
                         "name": "bea8u9g24x7ggb"
                       },
+                      "group": "cognitedata-datasource",
+                      "kind": "DataQuery",
                       "spec": {
                         "aggregation": "average",
                         "assetQuery": {
@@ -1998,22 +1675,22 @@
                         },
                         "type": "timeserie",
                         "warning": ""
-                      }
+                      },
+                      "version": "v0"
                     },
-                    "refId": "D",
-                    "hidden": false
+                    "refId": "D"
                   }
                 },
                 {
                   "kind": "PanelQuery",
                   "spec": {
+                    "hidden": false,
                     "query": {
-                      "kind": "DataQuery",
-                      "group": "cognitedata-datasource",
-                      "version": "v0",
                       "datasource": {
                         "name": "bea8u9g24x7ggb"
                       },
+                      "group": "cognitedata-datasource",
+                      "kind": "DataQuery",
                       "spec": {
                         "aggregation": "average",
                         "assetQuery": {
@@ -2079,22 +1756,22 @@
                         },
                         "type": "timeserie",
                         "warning": ""
-                      }
+                      },
+                      "version": "v0"
                     },
-                    "refId": "A",
-                    "hidden": false
+                    "refId": "A"
                   }
                 },
                 {
                   "kind": "PanelQuery",
                   "spec": {
+                    "hidden": false,
                     "query": {
-                      "kind": "DataQuery",
-                      "group": "cognitedata-datasource",
-                      "version": "v0",
                       "datasource": {
                         "name": "bea8u9g24x7ggb"
                       },
+                      "group": "cognitedata-datasource",
+                      "kind": "DataQuery",
                       "spec": {
                         "aggregation": "average",
                         "assetQuery": {
@@ -2160,57 +1837,28 @@
                         },
                         "type": "timeserie",
                         "warning": ""
-                      }
+                      },
+                      "version": "v0"
                     },
-                    "refId": "E",
-                    "hidden": false
+                    "refId": "E"
                   }
                 }
               ],
-              "transformations": [],
-              "queryOptions": {}
+              "queryOptions": {},
+              "transformations": []
             }
           },
+          "description": "",
+          "id": 20,
+          "links": [],
+          "title": "Injectivity",
+          "transparent": true,
           "vizConfig": {
-            "kind": "VizConfig",
             "group": "timeseries",
-            "version": "9.0.5-d1f1041",
+            "kind": "VizConfig",
             "spec": {
-              "options": {
-                "legend": {
-                  "calcs": [
-                    "mean",
-                    "lastNotNull",
-                    "max",
-                    "min"
-                  ],
-                  "displayMode": "table",
-                  "placement": "right",
-                  "showLegend": true,
-                  "width": 468
-                },
-                "tooltip": {
-                  "mode": "multi",
-                  "sort": "none"
-                }
-              },
               "fieldConfig": {
                 "defaults": {
-                  "unit": "short",
-                  "decimals": 0,
-                  "thresholds": {
-                    "mode": "absolute",
-                    "steps": [
-                      {
-                        "value": null,
-                        "color": "green"
-                      },
-                      {
-                        "value": 80,
-                        "color": "red"
-                      }
-                    ]
-                  },
                   "color": {
                     "mode": "palette-classic"
                   },
@@ -2245,7 +1893,21 @@
                     "thresholdsStyle": {
                       "mode": "off"
                     }
-                  }
+                  },
+                  "decimals": 0,
+                  "thresholds": {
+                    "mode": "absolute",
+                    "steps": [
+                      {
+                        "color": "green"
+                      },
+                      {
+                        "color": "red",
+                        "value": 80
+                      }
+                    ]
+                  },
+                  "unit": "short"
                 },
                 "overrides": [
                   {
@@ -2300,19 +1962,33 @@
                     ]
                   }
                 ]
+              },
+              "options": {
+                "legend": {
+                  "calcs": [
+                    "mean",
+                    "lastNotNull",
+                    "max",
+                    "min"
+                  ],
+                  "displayMode": "table",
+                  "placement": "right",
+                  "showLegend": true,
+                  "width": 468
+                },
+                "tooltip": {
+                  "mode": "multi",
+                  "sort": "none"
+                }
               }
-            }
-          },
-          "transparent": true
+            },
+            "version": "9.0.5-d1f1041"
+          }
         }
       },
       "panel-9": {
         "kind": "Panel",
         "spec": {
-          "id": 9,
-          "title": "Pumps and injection rate",
-          "description": "",
-          "links": [],
           "data": {
             "kind": "QueryGroup",
             "spec": {
@@ -2320,13 +1996,13 @@
                 {
                   "kind": "PanelQuery",
                   "spec": {
+                    "hidden": false,
                     "query": {
-                      "kind": "DataQuery",
-                      "group": "cognitedata-datasource",
-                      "version": "v0",
                       "datasource": {
                         "name": "bea8u9g24x7ggb"
                       },
+                      "group": "cognitedata-datasource",
+                      "kind": "DataQuery",
                       "spec": {
                         "aggregation": "average",
                         "assetQuery": {
@@ -2355,22 +2031,22 @@
                         "targetRefType": "id",
                         "type": "timeserie",
                         "warning": ""
-                      }
+                      },
+                      "version": "v0"
                     },
-                    "refId": "A",
-                    "hidden": false
+                    "refId": "A"
                   }
                 },
                 {
                   "kind": "PanelQuery",
                   "spec": {
+                    "hidden": false,
                     "query": {
-                      "kind": "DataQuery",
-                      "group": "cognitedata-datasource",
-                      "version": "v0",
                       "datasource": {
                         "name": "bea8u9g24x7ggb"
                       },
+                      "group": "cognitedata-datasource",
+                      "kind": "DataQuery",
                       "spec": {
                         "aggregation": "average",
                         "assetQuery": {
@@ -2399,22 +2075,22 @@
                         "targetRefType": "id",
                         "type": "timeserie",
                         "warning": ""
-                      }
+                      },
+                      "version": "v0"
                     },
-                    "refId": "B",
-                    "hidden": false
+                    "refId": "B"
                   }
                 },
                 {
                   "kind": "PanelQuery",
                   "spec": {
+                    "hidden": false,
                     "query": {
-                      "kind": "DataQuery",
-                      "group": "cognitedata-datasource",
-                      "version": "v0",
                       "datasource": {
                         "name": "bea8u9g24x7ggb"
                       },
+                      "group": "cognitedata-datasource",
+                      "kind": "DataQuery",
                       "spec": {
                         "aggregation": "average",
                         "assetQuery": {
@@ -2442,22 +2118,22 @@
                         "target": "EG_13FT1081.FAS.OilVolStdStg1",
                         "type": "timeserie",
                         "warning": ""
-                      }
+                      },
+                      "version": "v0"
                     },
-                    "refId": "C",
-                    "hidden": false
+                    "refId": "C"
                   }
                 },
                 {
                   "kind": "PanelQuery",
                   "spec": {
+                    "hidden": false,
                     "query": {
-                      "kind": "DataQuery",
-                      "group": "cognitedata-datasource",
-                      "version": "v0",
                       "datasource": {
                         "name": "bea8u9g24x7ggb"
                       },
+                      "group": "cognitedata-datasource",
+                      "kind": "DataQuery",
                       "spec": {
                         "aggregation": "average",
                         "assetQuery": {
@@ -2485,57 +2161,28 @@
                         "target": "EG_13FT1081.FAS.OilVolStdStg1",
                         "type": "timeserie",
                         "warning": ""
-                      }
+                      },
+                      "version": "v0"
                     },
-                    "refId": "D",
-                    "hidden": false
+                    "refId": "D"
                   }
                 }
               ],
-              "transformations": [],
-              "queryOptions": {}
+              "queryOptions": {},
+              "transformations": []
             }
           },
+          "description": "",
+          "id": 9,
+          "links": [],
+          "title": "Pumps and injection rate",
+          "transparent": true,
           "vizConfig": {
-            "kind": "VizConfig",
             "group": "timeseries",
-            "version": "9.0.5-d1f1041",
+            "kind": "VizConfig",
             "spec": {
-              "options": {
-                "legend": {
-                  "calcs": [
-                    "mean",
-                    "lastNotNull",
-                    "max",
-                    "min"
-                  ],
-                  "displayMode": "table",
-                  "placement": "right",
-                  "showLegend": true,
-                  "width": 468
-                },
-                "tooltip": {
-                  "mode": "multi",
-                  "sort": "none"
-                }
-              },
               "fieldConfig": {
                 "defaults": {
-                  "unit": "short",
-                  "decimals": 0,
-                  "thresholds": {
-                    "mode": "absolute",
-                    "steps": [
-                      {
-                        "value": null,
-                        "color": "green"
-                      },
-                      {
-                        "value": 80,
-                        "color": "red"
-                      }
-                    ]
-                  },
                   "color": {
                     "mode": "palette-classic"
                   },
@@ -2570,7 +2217,21 @@
                     "thresholdsStyle": {
                       "mode": "off"
                     }
-                  }
+                  },
+                  "decimals": 0,
+                  "thresholds": {
+                    "mode": "absolute",
+                    "steps": [
+                      {
+                        "color": "green"
+                      },
+                      {
+                        "color": "red",
+                        "value": 80
+                      }
+                    ]
+                  },
+                  "unit": "short"
                 },
                 "overrides": [
                   {
@@ -2605,10 +2266,28 @@
                     ]
                   }
                 ]
+              },
+              "options": {
+                "legend": {
+                  "calcs": [
+                    "mean",
+                    "lastNotNull",
+                    "max",
+                    "min"
+                  ],
+                  "displayMode": "table",
+                  "placement": "right",
+                  "showLegend": true,
+                  "width": 468
+                },
+                "tooltip": {
+                  "mode": "multi",
+                  "sort": "none"
+                }
               }
-            }
-          },
-          "transparent": true
+            },
+            "version": "9.0.5-d1f1041"
+          }
         }
       }
     },
@@ -2619,79 +2298,79 @@
           {
             "kind": "GridLayoutItem",
             "spec": {
-              "x": 0,
-              "y": 0,
-              "width": 24,
-              "height": 2,
               "element": {
                 "kind": "ElementReference",
                 "name": "panel-13"
-              }
+              },
+              "height": 2,
+              "width": 24,
+              "x": 0,
+              "y": 0
             }
           },
           {
             "kind": "GridLayoutItem",
             "spec": {
-              "x": 0,
-              "y": 2,
-              "width": 24,
-              "height": 13,
               "element": {
                 "kind": "ElementReference",
                 "name": "panel-17"
-              }
+              },
+              "height": 13,
+              "width": 24,
+              "x": 0,
+              "y": 2
             }
           },
           {
             "kind": "GridLayoutItem",
             "spec": {
-              "x": 0,
-              "y": 15,
-              "width": 24,
-              "height": 15,
               "element": {
                 "kind": "ElementReference",
                 "name": "panel-14"
-              }
+              },
+              "height": 15,
+              "width": 24,
+              "x": 0,
+              "y": 15
             }
           },
           {
             "kind": "GridLayoutItem",
             "spec": {
-              "x": 0,
-              "y": 30,
-              "width": 24,
-              "height": 6,
               "element": {
                 "kind": "ElementReference",
                 "name": "panel-15"
-              }
+              },
+              "height": 6,
+              "width": 24,
+              "x": 0,
+              "y": 30
             }
           },
           {
             "kind": "GridLayoutItem",
             "spec": {
-              "x": 0,
-              "y": 36,
-              "width": 24,
-              "height": 6,
               "element": {
                 "kind": "ElementReference",
                 "name": "panel-9"
-              }
+              },
+              "height": 6,
+              "width": 24,
+              "x": 0,
+              "y": 36
             }
           },
           {
             "kind": "GridLayoutItem",
             "spec": {
-              "x": 0,
-              "y": 42,
-              "width": 24,
-              "height": 6,
               "element": {
                 "kind": "ElementReference",
                 "name": "panel-20"
-              }
+              },
+              "height": 6,
+              "width": 24,
+              "x": 0,
+              "y": 42
             }
           }
         ]
@@ -2699,108 +2378,118 @@
     },
     "links": [
       {
+        "asDropdown": false,
+        "icon": "external link",
+        "includeVars": false,
+        "keepTime": false,
+        "tags": [],
+        "targetBlank": true,
+        "title": "Source (GitHub)",
+        "tooltip": "View source file in repository",
+        "type": "link",
+        "url": "https://github.com/anagoldakerbp/grafana-dev-test/blob/main/src/dashboard-1778078200190.json"
+      },
+      {
+        "asDropdown": false,
+        "icon": "dashboard",
+        "includeVars": false,
+        "keepTime": true,
+        "tags": [],
+        "targetBlank": false,
         "title": "A-01",
-        "type": "link",
-        "icon": "dashboard",
         "tooltip": "",
-        "url": "/d/t8QHq9R4z-mig/detailed-injection-view?orgId=1&$__url_time_range&&var-pw=A01&var-pc=71&var-inj_qw=1033&var-inj_ch=2519&var-inj_bhp=72&var-inj_whp=71&var-inj_bht=72&var-inj_wht=2520&var-inj_bhph=0&var-inj_bhpt=0&var-inj_bhth=0&var-inj_bhtt=0&var-inj_qg=0&var-inj_gm=0",
-        "tags": [],
-        "asDropdown": false,
-        "targetBlank": false,
-        "includeVars": false,
-        "keepTime": true
+        "type": "link",
+        "url": "/d/t8QHq9R4z-mig/detailed-injection-view?orgId=1\u0026$__url_time_range\u0026\u0026var-pw=A01\u0026var-pc=71\u0026var-inj_qw=1033\u0026var-inj_ch=2519\u0026var-inj_bhp=72\u0026var-inj_whp=71\u0026var-inj_bht=72\u0026var-inj_wht=2520\u0026var-inj_bhph=0\u0026var-inj_bhpt=0\u0026var-inj_bhth=0\u0026var-inj_bhtt=0\u0026var-inj_qg=0\u0026var-inj_gm=0"
       },
       {
+        "asDropdown": false,
+        "icon": "dashboard",
+        "includeVars": false,
+        "keepTime": true,
+        "tags": [],
+        "targetBlank": false,
         "title": "A-02",
-        "type": "link",
-        "icon": "dashboard",
         "tooltip": "",
-        "url": "/d/t8QHq9R4z-mig/detailed-injection-view?orgId=1&$__url_time_range&&var-pw=A02&var-pc=76&var-inj_qw=1035&var-inj_ch=2619&var-inj_bhp=77&var-inj_whp=76&var-inj_bht=77&var-inj_wht=2620&var-inj_bhph=0&var-inj_bhpt=0&var-inj_bhth=0&var-inj_bhtt=0&var-inj_qg=1023&var-inj_gm=2621",
-        "tags": [],
-        "asDropdown": false,
-        "targetBlank": false,
-        "includeVars": false,
-        "keepTime": true
+        "type": "link",
+        "url": "/d/t8QHq9R4z-mig/detailed-injection-view?orgId=1\u0026$__url_time_range\u0026\u0026var-pw=A02\u0026var-pc=76\u0026var-inj_qw=1035\u0026var-inj_ch=2619\u0026var-inj_bhp=77\u0026var-inj_whp=76\u0026var-inj_bht=77\u0026var-inj_wht=2620\u0026var-inj_bhph=0\u0026var-inj_bhpt=0\u0026var-inj_bhth=0\u0026var-inj_bhtt=0\u0026var-inj_qg=1023\u0026var-inj_gm=2621"
       },
       {
+        "asDropdown": false,
+        "icon": "dashboard",
+        "includeVars": false,
+        "keepTime": true,
+        "tags": [],
+        "targetBlank": false,
         "title": "A-05",
-        "type": "link",
-        "icon": "dashboard",
         "tooltip": "",
-        "url": "/d/t8QHq9R4z-mig/detailed-injection-view?orgId=1&$__url_time_range&&var-pw=A05&var-pc=81&var-inj_qw=1037&var-inj_ch=2719&var-inj_bhp=82&var-inj_whp=81&var-inj_bht=82&var-inj_wht=2720&var-inj_bhph=0&var-inj_bhpt=0&var-inj_bhth=0&var-inj_bhtt=0&var-inj_qg=1023&var-inj_gm=2721",
-        "tags": [],
-        "asDropdown": false,
-        "targetBlank": false,
-        "includeVars": false,
-        "keepTime": true
+        "type": "link",
+        "url": "/d/t8QHq9R4z-mig/detailed-injection-view?orgId=1\u0026$__url_time_range\u0026\u0026var-pw=A05\u0026var-pc=81\u0026var-inj_qw=1037\u0026var-inj_ch=2719\u0026var-inj_bhp=82\u0026var-inj_whp=81\u0026var-inj_bht=82\u0026var-inj_wht=2720\u0026var-inj_bhph=0\u0026var-inj_bhpt=0\u0026var-inj_bhth=0\u0026var-inj_bhtt=0\u0026var-inj_qg=1023\u0026var-inj_gm=2721"
       },
       {
+        "asDropdown": false,
+        "icon": "dashboard",
+        "includeVars": false,
+        "keepTime": true,
+        "tags": [],
+        "targetBlank": false,
         "title": "A-20",
-        "type": "link",
-        "icon": "dashboard",
         "tooltip": "",
-        "url": "/d/t8QHq9R4z-mig/detailed-injection-view?orgId=1&$__url_time_range&&var-pw=A20&var-pc=01&var-inj_qw=1834&var-inj_ch=1857&var-inj_bhp=0&var-inj_whp=01&var-inj_bht=0&var-inj_wht=1847&var-inj_bhph=5044&var-inj_bhpt=5024&var-inj_bhth=5043&var-inj_bhtt=5023&var-inj_qg=0&var-inj_gm=0&var-heelvalve=6983475016900490&var-toevalve=2538163211749283",
-        "tags": [],
-        "asDropdown": false,
-        "targetBlank": false,
-        "includeVars": false,
-        "keepTime": true
+        "type": "link",
+        "url": "/d/t8QHq9R4z-mig/detailed-injection-view?orgId=1\u0026$__url_time_range\u0026\u0026var-pw=A20\u0026var-pc=01\u0026var-inj_qw=1834\u0026var-inj_ch=1857\u0026var-inj_bhp=0\u0026var-inj_whp=01\u0026var-inj_bht=0\u0026var-inj_wht=1847\u0026var-inj_bhph=5044\u0026var-inj_bhpt=5024\u0026var-inj_bhth=5043\u0026var-inj_bhtt=5023\u0026var-inj_qg=0\u0026var-inj_gm=0\u0026var-heelvalve=6983475016900490\u0026var-toevalve=2538163211749283"
       },
       {
+        "asDropdown": false,
+        "icon": "dashboard",
+        "includeVars": false,
+        "keepTime": true,
+        "tags": [],
+        "targetBlank": false,
         "title": "BD",
-        "type": "link",
-        "icon": "dashboard",
         "tooltip": "",
-        "url": "/d/t8QHq9R4z-mig/detailed-injection-view?orgId=1&$__url_time_range&&var-pw=BD&var-inj_qw=0&var-inj_ch=0&var-inj_bhp=0&var-inj_whp=0&var-inj_bht=0&var-inj_wht=0&var-inj_bhph=0&var-inj_bhpt=0&var-inj_bhth=0&var-inj_bhtt=0&var-inj_qg=0&var-inj_gm=0",
-        "tags": [],
-        "asDropdown": false,
-        "targetBlank": false,
-        "includeVars": false,
-        "keepTime": true
+        "type": "link",
+        "url": "/d/t8QHq9R4z-mig/detailed-injection-view?orgId=1\u0026$__url_time_range\u0026\u0026var-pw=BD\u0026var-inj_qw=0\u0026var-inj_ch=0\u0026var-inj_bhp=0\u0026var-inj_whp=0\u0026var-inj_bht=0\u0026var-inj_wht=0\u0026var-inj_bhph=0\u0026var-inj_bhpt=0\u0026var-inj_bhth=0\u0026var-inj_bhtt=0\u0026var-inj_qg=0\u0026var-inj_gm=0"
       },
       {
+        "asDropdown": false,
+        "icon": "dashboard",
+        "includeVars": false,
+        "keepTime": true,
+        "tags": [],
+        "targetBlank": false,
         "title": "BE",
-        "type": "link",
-        "icon": "dashboard",
         "tooltip": "",
-        "url": "/d/t8QHq9R4z-mig/detailed-injection-view?orgId=1&$__url_time_range&&var-pw=BE&var-inj_qw=0&var-inj_ch=0&var-inj_bhp=0&var-inj_whp=0&var-inj_bht=0&var-inj_wht=0&var-inj_bhph=0&var-inj_bhpt=0&var-inj_bhth=0&var-inj_bhtt=0&var-inj_qg=0&var-inj_gm=0",
-        "tags": [],
-        "asDropdown": false,
-        "targetBlank": false,
-        "includeVars": false,
-        "keepTime": true
+        "type": "link",
+        "url": "/d/t8QHq9R4z-mig/detailed-injection-view?orgId=1\u0026$__url_time_range\u0026\u0026var-pw=BE\u0026var-inj_qw=0\u0026var-inj_ch=0\u0026var-inj_bhp=0\u0026var-inj_whp=0\u0026var-inj_bht=0\u0026var-inj_wht=0\u0026var-inj_bhph=0\u0026var-inj_bhpt=0\u0026var-inj_bhth=0\u0026var-inj_bhtt=0\u0026var-inj_qg=0\u0026var-inj_gm=0"
       },
       {
+        "asDropdown": false,
+        "icon": "dashboard",
+        "includeVars": false,
+        "keepTime": true,
+        "tags": [],
+        "targetBlank": true,
         "title": "Overall Production View",
-        "type": "link",
-        "icon": "dashboard",
         "tooltip": "",
-        "url": "/d/-Qy6Fpq7k-mig/overall-production-view?orgId=1",
-        "tags": [],
-        "asDropdown": false,
-        "targetBlank": true,
-        "includeVars": false,
-        "keepTime": true
+        "type": "link",
+        "url": "/d/-Qy6Fpq7k-mig/overall-production-view?orgId=1"
       },
       {
-        "title": "Overall Injection View",
-        "type": "link",
-        "icon": "dashboard",
-        "tooltip": "",
-        "url": "/d/uFOHBgg4z-mig/overall-injection-view?orgId=1",
-        "tags": [],
         "asDropdown": false,
-        "targetBlank": true,
+        "icon": "dashboard",
         "includeVars": false,
-        "keepTime": true
+        "keepTime": true,
+        "tags": [],
+        "targetBlank": true,
+        "title": "Overall Injection View",
+        "tooltip": "",
+        "type": "link",
+        "url": "/d/uFOHBgg4z-mig/overall-injection-view?orgId=1"
       }
     ],
     "liveNow": false,
     "preload": false,
     "tags": [],
     "timeSettings": {
-      "from": "now-30d",
-      "to": "now",
       "autoRefresh": "",
       "autoRefreshIntervals": [
         "10s",
@@ -2813,365 +2502,300 @@
         "2h",
         "1d"
       ],
+      "fiscalYearStartMonth": 0,
+      "from": "now-30d",
       "hideTimepicker": false,
-      "fiscalYearStartMonth": 0
+      "timezone": "browser",
+      "to": "now"
     },
     "title": "Detailed Injection View Solveig",
     "variables": [
       {
         "kind": "CustomVariable",
         "spec": {
-          "name": "pw",
-          "query": "$pw",
+          "allowCustomValue": true,
           "current": {
             "text": "BE",
             "value": "BE"
           },
-          "options": [
-            {
-              "selected": false,
-              "text": "BD",
-              "value": "BD"
-            }
-          ],
-          "multi": false,
-          "includeAll": false,
           "hide": "hideVariable",
+          "includeAll": false,
+          "multi": false,
+          "name": "pw",
+          "options": [],
+          "query": "$pw",
           "skipUrlSync": false,
-          "allowCustomValue": true
+          "valuesFormat": "csv"
         }
       },
       {
         "kind": "CustomVariable",
         "spec": {
+          "allowCustomValue": true,
+          "current": {
+            "text": "0",
+            "value": "0"
+          },
+          "hide": "hideVariable",
+          "includeAll": false,
+          "multi": false,
           "name": "inj_qw",
+          "options": [],
           "query": "$inj_qw",
-          "current": {
-            "text": "0",
-            "value": "0"
-          },
-          "options": [
-            {
-              "selected": false,
-              "text": "1033",
-              "value": "1033"
-            }
-          ],
-          "multi": false,
-          "includeAll": false,
-          "hide": "hideVariable",
           "skipUrlSync": false,
-          "allowCustomValue": true
+          "valuesFormat": "csv"
         }
       },
       {
         "kind": "CustomVariable",
         "spec": {
+          "allowCustomValue": true,
+          "current": {
+            "text": "0",
+            "value": "0"
+          },
+          "hide": "hideVariable",
+          "includeAll": false,
+          "multi": false,
           "name": "inj_ch",
+          "options": [],
           "query": "$inj_ch",
-          "current": {
-            "text": "0",
-            "value": "0"
-          },
-          "options": [
-            {
-              "selected": false,
-              "text": "2519",
-              "value": "2519"
-            }
-          ],
-          "multi": false,
-          "includeAll": false,
-          "hide": "hideVariable",
           "skipUrlSync": false,
-          "allowCustomValue": true
+          "valuesFormat": "csv"
         }
       },
       {
         "kind": "CustomVariable",
         "spec": {
+          "allowCustomValue": true,
+          "current": {
+            "text": "0",
+            "value": "0"
+          },
+          "hide": "hideVariable",
+          "includeAll": false,
+          "multi": false,
           "name": "inj_bhp",
+          "options": [],
           "query": "$inj_bhp",
-          "current": {
-            "text": "0",
-            "value": "0"
-          },
-          "options": [
-            {
-              "selected": false,
-              "text": "72",
-              "value": "72"
-            }
-          ],
-          "multi": false,
-          "includeAll": false,
-          "hide": "hideVariable",
           "skipUrlSync": false,
-          "allowCustomValue": true
+          "valuesFormat": "csv"
         }
       },
       {
         "kind": "CustomVariable",
         "spec": {
+          "allowCustomValue": true,
+          "current": {
+            "text": "0",
+            "value": "0"
+          },
+          "hide": "hideVariable",
+          "includeAll": false,
+          "multi": false,
           "name": "inj_whp",
+          "options": [],
           "query": "$inj_whp",
-          "current": {
-            "text": "0",
-            "value": "0"
-          },
-          "options": [
-            {
-              "selected": false,
-              "text": "71",
-              "value": "71"
-            }
-          ],
-          "multi": false,
-          "includeAll": false,
-          "hide": "hideVariable",
           "skipUrlSync": false,
-          "allowCustomValue": true
+          "valuesFormat": "csv"
         }
       },
       {
         "kind": "CustomVariable",
         "spec": {
+          "allowCustomValue": true,
+          "current": {
+            "text": "0",
+            "value": "0"
+          },
+          "hide": "hideVariable",
+          "includeAll": false,
+          "multi": false,
           "name": "inj_bht",
+          "options": [],
           "query": "$inj_bht",
-          "current": {
-            "text": "0",
-            "value": "0"
-          },
-          "options": [
-            {
-              "selected": false,
-              "text": "72",
-              "value": "72"
-            }
-          ],
-          "multi": false,
-          "includeAll": false,
-          "hide": "hideVariable",
           "skipUrlSync": false,
-          "allowCustomValue": true
+          "valuesFormat": "csv"
         }
       },
       {
         "kind": "CustomVariable",
         "spec": {
+          "allowCustomValue": true,
+          "current": {
+            "text": "0",
+            "value": "0"
+          },
+          "hide": "hideVariable",
+          "includeAll": false,
+          "multi": false,
           "name": "inj_wht",
+          "options": [],
           "query": "$inj_wht",
-          "current": {
-            "text": "0",
-            "value": "0"
-          },
-          "options": [
-            {
-              "selected": false,
-              "text": "2520",
-              "value": "2520"
-            }
-          ],
-          "multi": false,
-          "includeAll": false,
-          "hide": "hideVariable",
           "skipUrlSync": false,
-          "allowCustomValue": true
+          "valuesFormat": "csv"
         }
       },
       {
         "kind": "CustomVariable",
         "spec": {
+          "allowCustomValue": true,
+          "current": {
+            "text": "0",
+            "value": "0"
+          },
+          "hide": "hideVariable",
+          "includeAll": false,
+          "multi": false,
           "name": "inj_bhph",
+          "options": [],
           "query": "$inj_bhph",
-          "current": {
-            "text": "0",
-            "value": "0"
-          },
-          "options": [
-            {
-              "selected": true,
-              "text": "0",
-              "value": "0"
-            }
-          ],
-          "multi": false,
-          "includeAll": false,
-          "hide": "hideVariable",
           "skipUrlSync": false,
-          "allowCustomValue": true
+          "valuesFormat": "csv"
         }
       },
       {
         "kind": "CustomVariable",
         "spec": {
+          "allowCustomValue": true,
+          "current": {
+            "text": "0",
+            "value": "0"
+          },
+          "hide": "hideVariable",
+          "includeAll": false,
+          "multi": false,
           "name": "inj_bhpt",
+          "options": [],
           "query": "$inj_bhpt",
-          "current": {
-            "text": "0",
-            "value": "0"
-          },
-          "options": [
-            {
-              "selected": true,
-              "text": "0",
-              "value": "0"
-            }
-          ],
-          "multi": false,
-          "includeAll": false,
-          "hide": "hideVariable",
           "skipUrlSync": false,
-          "allowCustomValue": true
+          "valuesFormat": "csv"
         }
       },
       {
         "kind": "CustomVariable",
         "spec": {
+          "allowCustomValue": true,
+          "current": {
+            "text": "0",
+            "value": "0"
+          },
+          "hide": "hideVariable",
+          "includeAll": false,
+          "multi": false,
           "name": "inj_bhth",
+          "options": [],
           "query": "$inj_bhth",
-          "current": {
-            "text": "0",
-            "value": "0"
-          },
-          "options": [
-            {
-              "selected": true,
-              "text": "0",
-              "value": "0"
-            }
-          ],
-          "multi": false,
-          "includeAll": false,
-          "hide": "hideVariable",
           "skipUrlSync": false,
-          "allowCustomValue": true
+          "valuesFormat": "csv"
         }
       },
       {
         "kind": "CustomVariable",
         "spec": {
+          "allowCustomValue": true,
+          "current": {
+            "text": "0",
+            "value": "0"
+          },
+          "hide": "hideVariable",
+          "includeAll": false,
+          "multi": false,
           "name": "inj_bhtt",
+          "options": [],
           "query": "$inj_bhtt",
-          "current": {
-            "text": "0",
-            "value": "0"
-          },
-          "options": [
-            {
-              "selected": true,
-              "text": "0",
-              "value": "0"
-            }
-          ],
-          "multi": false,
-          "includeAll": false,
-          "hide": "hideVariable",
           "skipUrlSync": false,
-          "allowCustomValue": true
+          "valuesFormat": "csv"
         }
       },
       {
         "kind": "CustomVariable",
         "spec": {
+          "allowCustomValue": true,
+          "current": {
+            "text": "0",
+            "value": "0"
+          },
+          "hide": "hideVariable",
+          "includeAll": false,
+          "multi": false,
           "name": "inj_qg",
+          "options": [],
           "query": "$inj_qg",
-          "current": {
-            "text": "0",
-            "value": "0"
-          },
-          "options": [
-            {
-              "selected": true,
-              "text": "0",
-              "value": "0"
-            }
-          ],
-          "multi": false,
-          "includeAll": false,
-          "hide": "hideVariable",
           "skipUrlSync": false,
-          "allowCustomValue": true
+          "valuesFormat": "csv"
         }
       },
       {
         "kind": "CustomVariable",
         "spec": {
+          "allowCustomValue": true,
+          "current": {
+            "text": "0",
+            "value": "0"
+          },
+          "hide": "hideVariable",
+          "includeAll": false,
+          "multi": false,
           "name": "inj_gm",
+          "options": [],
           "query": "$inj_gm",
-          "current": {
-            "text": "0",
-            "value": "0"
-          },
-          "options": [
-            {
-              "selected": true,
-              "text": "0",
-              "value": "0"
-            }
-          ],
-          "multi": false,
-          "includeAll": false,
-          "hide": "hideVariable",
           "skipUrlSync": false,
-          "allowCustomValue": true
+          "valuesFormat": "csv"
         }
       },
       {
         "kind": "CustomVariable",
         "spec": {
+          "allowCustomValue": true,
+          "current": {
+            "text": "",
+            "value": ""
+          },
+          "hide": "hideVariable",
+          "includeAll": false,
+          "multi": false,
           "name": "heelvalve",
+          "options": [],
           "query": "$heelvalve",
-          "current": {
-            "text": "",
-            "value": ""
-          },
-          "options": [],
-          "multi": false,
-          "includeAll": false,
-          "hide": "hideVariable",
           "skipUrlSync": false,
-          "allowCustomValue": true
+          "valuesFormat": "csv"
         }
       },
       {
         "kind": "CustomVariable",
         "spec": {
+          "allowCustomValue": true,
+          "current": {
+            "text": "",
+            "value": ""
+          },
+          "hide": "hideVariable",
+          "includeAll": false,
+          "multi": false,
           "name": "toevalve",
-          "query": "$toevalve",
-          "current": {
-            "text": "",
-            "value": ""
-          },
           "options": [],
-          "multi": false,
-          "includeAll": false,
-          "hide": "hideVariable",
+          "query": "$toevalve",
           "skipUrlSync": false,
-          "allowCustomValue": true
+          "valuesFormat": "csv"
         }
       },
       {
         "kind": "CustomVariable",
         "spec": {
-          "name": "pc",
-          "query": "$pc",
+          "allowCustomValue": true,
           "current": {
             "text": "57",
             "value": "57"
           },
-          "options": [
-            {
-              "selected": true,
-              "text": "57",
-              "value": "57"
-            }
-          ],
-          "multi": false,
-          "includeAll": false,
           "hide": "hideVariable",
+          "includeAll": false,
+          "multi": false,
+          "name": "pc",
+          "options": [],
+          "query": "$pc",
           "skipUrlSync": false,
-          "allowCustomValue": true
+          "valuesFormat": "csv"
         }
       }
     ]
